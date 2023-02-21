@@ -7,7 +7,7 @@ GITHUB_TOKEN=YOUR_GITHUB_TOKEN
 Run
 
 ```
-docker run --env-file env.list fork-repo OWNER/REPO
+docker run -it --env-file env.list fork-repo node fork-repo.js "turbo-src/demo"
 ```
 
 ## Setup
