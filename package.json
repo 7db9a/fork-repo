@@ -1,0 +1,16 @@
+{
+"name": "fork-repo",
+"version": "1.0.0",
+"description": "A Node.js script for forking a GitHub repo",
+"main": "fork-repo.js",
+"keywords": [
+  "nodejs",
+  "github",
+  "fork"
+],
+"author": "Your Name",
+"license": "ISC",
+"dependencies": {
+  "octokit": "^18.0.1"
+}
+}
