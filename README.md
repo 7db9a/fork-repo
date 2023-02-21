@@ -1,9 +1,13 @@
-Create an environmental variable
-
-GITHUB_TOKEN=YOUR_GITHUB_TOKEN 
+Create `env.list` file with the following:
 
 ```
-node fork-repo.js OWNER/REPO
+GITHUB_TOKEN=YOUR_GITHUB_TOKEN
+```
+
+Run
+
+```
+docker run --env-file env.list fork-repo OWNER/REPO
 ```
 
 ## Setup
