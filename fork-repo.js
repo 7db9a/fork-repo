@@ -1,7 +1,10 @@
+const fs = require('fs');
 const { Octokit } = require("@octokit/rest");
 
+// Read the environment variable from the file
 // Get the GitHub token from an environment variable
-const token = process.env.GITHUB_TOKEN;
+const envFile = fs.readFileSync('env.list', 'utf8');
+const token = envFile.split('=')[1].trim();
 
 // Get the repo name from the command line arguments
 const repoName = process.argv[2];
